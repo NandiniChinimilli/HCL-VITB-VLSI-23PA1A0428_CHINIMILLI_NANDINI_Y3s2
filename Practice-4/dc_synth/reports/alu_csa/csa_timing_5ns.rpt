@@ -1,0 +1,685 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : alu_csa
+Version: T-2022.03-SP5-4
+Date   : Wed Jun 10 18:10:18 2026
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: opcode[2] (input port clocked by ideal_clock1)
+  Endpoint: zero_flag_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_csa            8000                  saed32rvt_ss0p95v125c
+  full_adder_27      ForQA                 saed32rvt_ss0p95v125c
+  adder_rca4_6       ForQA                 saed32rvt_ss0p95v125c
+  full_adder_26      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_25      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_24      ForQA                 saed32rvt_ss0p95v125c
+  adder_csa16        8000                  saed32rvt_ss0p95v125c
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                0.00       0.00
+  clock network delay (ideal)                   0.00       0.00
+  input external delay                          1.00       1.00 f
+  opcode[2] (in)                                0.00       1.00 f
+  U143/Y (INVX1_RVT)                            0.02       1.02 r
+  U111/Y (NAND3X0_RVT)                          0.11       1.13 f
+  U119/Y (INVX2_RVT)                            0.12       1.24 r
+  U118/Y (XNOR2X1_RVT)                          0.15       1.39 r
+  adder_inst/b[0] (adder_csa16)                 0.00       1.39 r
+  adder_inst/rca0/b[0] (adder_rca4_6)           0.00       1.39 r
+  adder_inst/rca0/fa0/b (full_adder_27)         0.00       1.39 r
+  adder_inst/rca0/fa0/U1/Y (XOR2X1_RVT)         0.13       1.52 f
+  adder_inst/rca0/fa0/U3/Y (AO22X1_RVT)         0.07       1.60 f
+  adder_inst/rca0/fa0/cout (full_adder_27)      0.00       1.60 f
+  adder_inst/rca0/fa1/cin (full_adder_26)       0.00       1.60 f
+  adder_inst/rca0/fa1/U1/Y (XOR2X1_RVT)         0.13       1.73 r
+  adder_inst/rca0/fa1/U3/Y (AO22X1_RVT)         0.08       1.81 r
+  adder_inst/rca0/fa1/cout (full_adder_26)      0.00       1.81 r
+  adder_inst/rca0/fa2/cin (full_adder_25)       0.00       1.81 r
+  adder_inst/rca0/fa2/U1/Y (XOR2X1_RVT)         0.14       1.95 f
+  adder_inst/rca0/fa2/U3/Y (AO22X1_RVT)         0.07       2.02 f
+  adder_inst/rca0/fa2/cout (full_adder_25)      0.00       2.02 f
+  adder_inst/rca0/fa3/cin (full_adder_24)       0.00       2.02 f
+  adder_inst/rca0/fa3/U1/Y (XOR2X1_RVT)         0.13       2.16 r
+  adder_inst/rca0/fa3/U3/Y (AO22X1_RVT)         0.09       2.25 r
+  adder_inst/rca0/fa3/cout (full_adder_24)      0.00       2.25 r
+  adder_inst/rca0/cout (adder_rca4_6)           0.00       2.25 r
+  adder_inst/U4/Y (INVX1_RVT)                   0.04       2.29 f
+  adder_inst/U20/Y (AO22X1_RVT)                 0.08       2.37 f
+  adder_inst/U5/Y (INVX1_RVT)                   0.04       2.41 r
+  adder_inst/U19/Y (AO22X1_RVT)                 0.09       2.50 r
+  adder_inst/U3/Y (INVX1_RVT)                   0.04       2.54 f
+  adder_inst/U12/Y (AO22X1_RVT)                 0.07       2.61 f
+  adder_inst/sum[15] (adder_csa16)              0.00       2.61 f
+  U91/Y (AO221X1_RVT)                           0.09       2.70 f
+  U123/Y (OR4X1_RVT)                            0.13       2.83 f
+  U4/Y (NOR4X1_RVT)                             0.10       2.93 r
+  zero_flag_reg/D (DFFARX1_RVT)                 0.00       2.93 r
+  data arrival time                                        2.93
+
+  clock ideal_clock1 (rise edge)                5.00       5.00
+  clock network delay (ideal)                   0.00       5.00
+  zero_flag_reg/CLK (DFFARX1_RVT)               0.00       5.00 r
+  library setup time                           -0.05       4.95
+  data required time                                       4.95
+  ----------------------------------------------------------------
+  data required time                                       4.95
+  data arrival time                                       -2.93
+  ----------------------------------------------------------------
+  slack (MET)                                              2.01
+
+
+  Startpoint: opcode[2] (input port clocked by ideal_clock1)
+  Endpoint: overflow_flag_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_csa            8000                  saed32rvt_ss0p95v125c
+  full_adder_27      ForQA                 saed32rvt_ss0p95v125c
+  adder_rca4_6       ForQA                 saed32rvt_ss0p95v125c
+  full_adder_26      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_25      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_24      ForQA                 saed32rvt_ss0p95v125c
+  adder_csa16        8000                  saed32rvt_ss0p95v125c
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                0.00       0.00
+  clock network delay (ideal)                   0.00       0.00
+  input external delay                          1.00       1.00 f
+  opcode[2] (in)                                0.00       1.00 f
+  U143/Y (INVX1_RVT)                            0.02       1.02 r
+  U111/Y (NAND3X0_RVT)                          0.11       1.13 f
+  U119/Y (INVX2_RVT)                            0.12       1.24 r
+  U118/Y (XNOR2X1_RVT)                          0.15       1.39 r
+  adder_inst/b[0] (adder_csa16)                 0.00       1.39 r
+  adder_inst/rca0/b[0] (adder_rca4_6)           0.00       1.39 r
+  adder_inst/rca0/fa0/b (full_adder_27)         0.00       1.39 r
+  adder_inst/rca0/fa0/U1/Y (XOR2X1_RVT)         0.13       1.52 f
+  adder_inst/rca0/fa0/U3/Y (AO22X1_RVT)         0.07       1.60 f
+  adder_inst/rca0/fa0/cout (full_adder_27)      0.00       1.60 f
+  adder_inst/rca0/fa1/cin (full_adder_26)       0.00       1.60 f
+  adder_inst/rca0/fa1/U1/Y (XOR2X1_RVT)         0.13       1.73 r
+  adder_inst/rca0/fa1/U3/Y (AO22X1_RVT)         0.08       1.81 r
+  adder_inst/rca0/fa1/cout (full_adder_26)      0.00       1.81 r
+  adder_inst/rca0/fa2/cin (full_adder_25)       0.00       1.81 r
+  adder_inst/rca0/fa2/U1/Y (XOR2X1_RVT)         0.14       1.95 f
+  adder_inst/rca0/fa2/U3/Y (AO22X1_RVT)         0.07       2.02 f
+  adder_inst/rca0/fa2/cout (full_adder_25)      0.00       2.02 f
+  adder_inst/rca0/fa3/cin (full_adder_24)       0.00       2.02 f
+  adder_inst/rca0/fa3/U1/Y (XOR2X1_RVT)         0.13       2.16 r
+  adder_inst/rca0/fa3/U3/Y (AO22X1_RVT)         0.09       2.25 r
+  adder_inst/rca0/fa3/cout (full_adder_24)      0.00       2.25 r
+  adder_inst/rca0/cout (adder_rca4_6)           0.00       2.25 r
+  adder_inst/U4/Y (INVX1_RVT)                   0.04       2.29 f
+  adder_inst/U20/Y (AO22X1_RVT)                 0.08       2.37 f
+  adder_inst/U5/Y (INVX1_RVT)                   0.04       2.41 r
+  adder_inst/U19/Y (AO22X1_RVT)                 0.09       2.50 r
+  adder_inst/U3/Y (INVX1_RVT)                   0.04       2.54 f
+  adder_inst/U12/Y (AO22X1_RVT)                 0.07       2.61 f
+  adder_inst/sum[15] (adder_csa16)              0.00       2.61 f
+  U145/Y (XOR2X1_RVT)                           0.10       2.71 r
+  U61/Y (AND2X1_RVT)                            0.05       2.76 r
+  overflow_flag_reg/D (DFFARX1_RVT)             0.00       2.76 r
+  data arrival time                                        2.76
+
+  clock ideal_clock1 (rise edge)                5.00       5.00
+  clock network delay (ideal)                   0.00       5.00
+  overflow_flag_reg/CLK (DFFARX1_RVT)           0.00       5.00 r
+  library setup time                           -0.05       4.95
+  data required time                                       4.95
+  ----------------------------------------------------------------
+  data required time                                       4.95
+  data arrival time                                       -2.76
+  ----------------------------------------------------------------
+  slack (MET)                                              2.18
+
+
+  Startpoint: opcode[2] (input port clocked by ideal_clock1)
+  Endpoint: Y_reg[15] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_csa            8000                  saed32rvt_ss0p95v125c
+  full_adder_27      ForQA                 saed32rvt_ss0p95v125c
+  adder_rca4_6       ForQA                 saed32rvt_ss0p95v125c
+  full_adder_26      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_25      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_24      ForQA                 saed32rvt_ss0p95v125c
+  adder_csa16        8000                  saed32rvt_ss0p95v125c
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                0.00       0.00
+  clock network delay (ideal)                   0.00       0.00
+  input external delay                          1.00       1.00 f
+  opcode[2] (in)                                0.00       1.00 f
+  U143/Y (INVX1_RVT)                            0.02       1.02 r
+  U111/Y (NAND3X0_RVT)                          0.11       1.13 f
+  U119/Y (INVX2_RVT)                            0.12       1.24 r
+  U118/Y (XNOR2X1_RVT)                          0.14       1.38 f
+  adder_inst/b[0] (adder_csa16)                 0.00       1.38 f
+  adder_inst/rca0/b[0] (adder_rca4_6)           0.00       1.38 f
+  adder_inst/rca0/fa0/b (full_adder_27)         0.00       1.38 f
+  adder_inst/rca0/fa0/U1/Y (XOR2X1_RVT)         0.12       1.50 r
+  adder_inst/rca0/fa0/U3/Y (AO22X1_RVT)         0.08       1.59 r
+  adder_inst/rca0/fa0/cout (full_adder_27)      0.00       1.59 r
+  adder_inst/rca0/fa1/cin (full_adder_26)       0.00       1.59 r
+  adder_inst/rca0/fa1/U1/Y (XOR2X1_RVT)         0.14       1.72 f
+  adder_inst/rca0/fa1/U3/Y (AO22X1_RVT)         0.07       1.80 f
+  adder_inst/rca0/fa1/cout (full_adder_26)      0.00       1.80 f
+  adder_inst/rca0/fa2/cin (full_adder_25)       0.00       1.80 f
+  adder_inst/rca0/fa2/U1/Y (XOR2X1_RVT)         0.13       1.93 r
+  adder_inst/rca0/fa2/U3/Y (AO22X1_RVT)         0.08       2.01 r
+  adder_inst/rca0/fa2/cout (full_adder_25)      0.00       2.01 r
+  adder_inst/rca0/fa3/cin (full_adder_24)       0.00       2.01 r
+  adder_inst/rca0/fa3/U1/Y (XOR2X1_RVT)         0.14       2.15 f
+  adder_inst/rca0/fa3/U3/Y (AO22X1_RVT)         0.08       2.23 f
+  adder_inst/rca0/fa3/cout (full_adder_24)      0.00       2.23 f
+  adder_inst/rca0/cout (adder_rca4_6)           0.00       2.23 f
+  adder_inst/U4/Y (INVX1_RVT)                   0.04       2.27 r
+  adder_inst/U20/Y (AO22X1_RVT)                 0.09       2.36 r
+  adder_inst/U5/Y (INVX1_RVT)                   0.04       2.40 f
+  adder_inst/U19/Y (AO22X1_RVT)                 0.08       2.48 f
+  adder_inst/U3/Y (INVX1_RVT)                   0.04       2.53 r
+  adder_inst/U12/Y (AO22X1_RVT)                 0.08       2.60 r
+  adder_inst/sum[15] (adder_csa16)              0.00       2.60 r
+  U91/Y (AO221X1_RVT)                           0.09       2.69 r
+  Y_reg[15]/D (DFFARX1_RVT)                     0.00       2.69 r
+  data arrival time                                        2.69
+
+  clock ideal_clock1 (rise edge)                5.00       5.00
+  clock network delay (ideal)                   0.00       5.00
+  Y_reg[15]/CLK (DFFARX1_RVT)                   0.00       5.00 r
+  library setup time                           -0.07       4.93
+  data required time                                       4.93
+  ----------------------------------------------------------------
+  data required time                                       4.93
+  data arrival time                                       -2.69
+  ----------------------------------------------------------------
+  slack (MET)                                              2.24
+
+
+  Startpoint: opcode[2] (input port clocked by ideal_clock1)
+  Endpoint: Y_reg[12] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_csa            8000                  saed32rvt_ss0p95v125c
+  full_adder_27      ForQA                 saed32rvt_ss0p95v125c
+  adder_rca4_6       ForQA                 saed32rvt_ss0p95v125c
+  full_adder_26      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_25      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_24      ForQA                 saed32rvt_ss0p95v125c
+  adder_csa16        8000                  saed32rvt_ss0p95v125c
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                0.00       0.00
+  clock network delay (ideal)                   0.00       0.00
+  input external delay                          1.00       1.00 f
+  opcode[2] (in)                                0.00       1.00 f
+  U143/Y (INVX1_RVT)                            0.02       1.02 r
+  U111/Y (NAND3X0_RVT)                          0.11       1.13 f
+  U119/Y (INVX2_RVT)                            0.12       1.24 r
+  U118/Y (XNOR2X1_RVT)                          0.14       1.38 f
+  adder_inst/b[0] (adder_csa16)                 0.00       1.38 f
+  adder_inst/rca0/b[0] (adder_rca4_6)           0.00       1.38 f
+  adder_inst/rca0/fa0/b (full_adder_27)         0.00       1.38 f
+  adder_inst/rca0/fa0/U1/Y (XOR2X1_RVT)         0.12       1.50 r
+  adder_inst/rca0/fa0/U3/Y (AO22X1_RVT)         0.08       1.59 r
+  adder_inst/rca0/fa0/cout (full_adder_27)      0.00       1.59 r
+  adder_inst/rca0/fa1/cin (full_adder_26)       0.00       1.59 r
+  adder_inst/rca0/fa1/U1/Y (XOR2X1_RVT)         0.14       1.72 f
+  adder_inst/rca0/fa1/U3/Y (AO22X1_RVT)         0.07       1.80 f
+  adder_inst/rca0/fa1/cout (full_adder_26)      0.00       1.80 f
+  adder_inst/rca0/fa2/cin (full_adder_25)       0.00       1.80 f
+  adder_inst/rca0/fa2/U1/Y (XOR2X1_RVT)         0.13       1.93 r
+  adder_inst/rca0/fa2/U3/Y (AO22X1_RVT)         0.08       2.01 r
+  adder_inst/rca0/fa2/cout (full_adder_25)      0.00       2.01 r
+  adder_inst/rca0/fa3/cin (full_adder_24)       0.00       2.01 r
+  adder_inst/rca0/fa3/U1/Y (XOR2X1_RVT)         0.14       2.15 f
+  adder_inst/rca0/fa3/U3/Y (AO22X1_RVT)         0.08       2.23 f
+  adder_inst/rca0/fa3/cout (full_adder_24)      0.00       2.23 f
+  adder_inst/rca0/cout (adder_rca4_6)           0.00       2.23 f
+  adder_inst/U4/Y (INVX1_RVT)                   0.04       2.27 r
+  adder_inst/U20/Y (AO22X1_RVT)                 0.09       2.36 r
+  adder_inst/U5/Y (INVX1_RVT)                   0.04       2.40 f
+  adder_inst/U19/Y (AO22X1_RVT)                 0.08       2.48 f
+  adder_inst/U3/Y (INVX1_RVT)                   0.04       2.53 r
+  adder_inst/U15/Y (AO22X1_RVT)                 0.07       2.60 r
+  adder_inst/sum[12] (adder_csa16)              0.00       2.60 r
+  U100/Y (AO222X1_RVT)                          0.09       2.69 r
+  Y_reg[12]/D (DFFARX1_RVT)                     0.00       2.69 r
+  data arrival time                                        2.69
+
+  clock ideal_clock1 (rise edge)                5.00       5.00
+  clock network delay (ideal)                   0.00       5.00
+  Y_reg[12]/CLK (DFFARX1_RVT)                   0.00       5.00 r
+  library setup time                           -0.07       4.93
+  data required time                                       4.93
+  ----------------------------------------------------------------
+  data required time                                       4.93
+  data arrival time                                       -2.69
+  ----------------------------------------------------------------
+  slack (MET)                                              2.25
+
+
+  Startpoint: opcode[2] (input port clocked by ideal_clock1)
+  Endpoint: Y_reg[14] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_csa            8000                  saed32rvt_ss0p95v125c
+  full_adder_27      ForQA                 saed32rvt_ss0p95v125c
+  adder_rca4_6       ForQA                 saed32rvt_ss0p95v125c
+  full_adder_26      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_25      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_24      ForQA                 saed32rvt_ss0p95v125c
+  adder_csa16        8000                  saed32rvt_ss0p95v125c
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                0.00       0.00
+  clock network delay (ideal)                   0.00       0.00
+  input external delay                          1.00       1.00 f
+  opcode[2] (in)                                0.00       1.00 f
+  U143/Y (INVX1_RVT)                            0.02       1.02 r
+  U111/Y (NAND3X0_RVT)                          0.11       1.13 f
+  U119/Y (INVX2_RVT)                            0.12       1.24 r
+  U118/Y (XNOR2X1_RVT)                          0.14       1.38 f
+  adder_inst/b[0] (adder_csa16)                 0.00       1.38 f
+  adder_inst/rca0/b[0] (adder_rca4_6)           0.00       1.38 f
+  adder_inst/rca0/fa0/b (full_adder_27)         0.00       1.38 f
+  adder_inst/rca0/fa0/U1/Y (XOR2X1_RVT)         0.12       1.50 r
+  adder_inst/rca0/fa0/U3/Y (AO22X1_RVT)         0.08       1.59 r
+  adder_inst/rca0/fa0/cout (full_adder_27)      0.00       1.59 r
+  adder_inst/rca0/fa1/cin (full_adder_26)       0.00       1.59 r
+  adder_inst/rca0/fa1/U1/Y (XOR2X1_RVT)         0.14       1.72 f
+  adder_inst/rca0/fa1/U3/Y (AO22X1_RVT)         0.07       1.80 f
+  adder_inst/rca0/fa1/cout (full_adder_26)      0.00       1.80 f
+  adder_inst/rca0/fa2/cin (full_adder_25)       0.00       1.80 f
+  adder_inst/rca0/fa2/U1/Y (XOR2X1_RVT)         0.13       1.93 r
+  adder_inst/rca0/fa2/U3/Y (AO22X1_RVT)         0.08       2.01 r
+  adder_inst/rca0/fa2/cout (full_adder_25)      0.00       2.01 r
+  adder_inst/rca0/fa3/cin (full_adder_24)       0.00       2.01 r
+  adder_inst/rca0/fa3/U1/Y (XOR2X1_RVT)         0.14       2.15 f
+  adder_inst/rca0/fa3/U3/Y (AO22X1_RVT)         0.08       2.23 f
+  adder_inst/rca0/fa3/cout (full_adder_24)      0.00       2.23 f
+  adder_inst/rca0/cout (adder_rca4_6)           0.00       2.23 f
+  adder_inst/U4/Y (INVX1_RVT)                   0.04       2.27 r
+  adder_inst/U20/Y (AO22X1_RVT)                 0.09       2.36 r
+  adder_inst/U5/Y (INVX1_RVT)                   0.04       2.40 f
+  adder_inst/U19/Y (AO22X1_RVT)                 0.08       2.48 f
+  adder_inst/U3/Y (INVX1_RVT)                   0.04       2.53 r
+  adder_inst/U13/Y (AO22X1_RVT)                 0.07       2.60 r
+  adder_inst/sum[14] (adder_csa16)              0.00       2.60 r
+  U94/Y (AO222X1_RVT)                           0.09       2.68 r
+  Y_reg[14]/D (DFFARX1_RVT)                     0.00       2.68 r
+  data arrival time                                        2.68
+
+  clock ideal_clock1 (rise edge)                5.00       5.00
+  clock network delay (ideal)                   0.00       5.00
+  Y_reg[14]/CLK (DFFARX1_RVT)                   0.00       5.00 r
+  library setup time                           -0.07       4.93
+  data required time                                       4.93
+  ----------------------------------------------------------------
+  data required time                                       4.93
+  data arrival time                                       -2.68
+  ----------------------------------------------------------------
+  slack (MET)                                              2.25
+
+
+  Startpoint: opcode[2] (input port clocked by ideal_clock1)
+  Endpoint: Y_reg[13] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_csa            8000                  saed32rvt_ss0p95v125c
+  full_adder_27      ForQA                 saed32rvt_ss0p95v125c
+  adder_rca4_6       ForQA                 saed32rvt_ss0p95v125c
+  full_adder_26      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_25      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_24      ForQA                 saed32rvt_ss0p95v125c
+  adder_csa16        8000                  saed32rvt_ss0p95v125c
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                0.00       0.00
+  clock network delay (ideal)                   0.00       0.00
+  input external delay                          1.00       1.00 f
+  opcode[2] (in)                                0.00       1.00 f
+  U143/Y (INVX1_RVT)                            0.02       1.02 r
+  U111/Y (NAND3X0_RVT)                          0.11       1.13 f
+  U119/Y (INVX2_RVT)                            0.12       1.24 r
+  U118/Y (XNOR2X1_RVT)                          0.14       1.38 f
+  adder_inst/b[0] (adder_csa16)                 0.00       1.38 f
+  adder_inst/rca0/b[0] (adder_rca4_6)           0.00       1.38 f
+  adder_inst/rca0/fa0/b (full_adder_27)         0.00       1.38 f
+  adder_inst/rca0/fa0/U1/Y (XOR2X1_RVT)         0.12       1.50 r
+  adder_inst/rca0/fa0/U3/Y (AO22X1_RVT)         0.08       1.59 r
+  adder_inst/rca0/fa0/cout (full_adder_27)      0.00       1.59 r
+  adder_inst/rca0/fa1/cin (full_adder_26)       0.00       1.59 r
+  adder_inst/rca0/fa1/U1/Y (XOR2X1_RVT)         0.14       1.72 f
+  adder_inst/rca0/fa1/U3/Y (AO22X1_RVT)         0.07       1.80 f
+  adder_inst/rca0/fa1/cout (full_adder_26)      0.00       1.80 f
+  adder_inst/rca0/fa2/cin (full_adder_25)       0.00       1.80 f
+  adder_inst/rca0/fa2/U1/Y (XOR2X1_RVT)         0.13       1.93 r
+  adder_inst/rca0/fa2/U3/Y (AO22X1_RVT)         0.08       2.01 r
+  adder_inst/rca0/fa2/cout (full_adder_25)      0.00       2.01 r
+  adder_inst/rca0/fa3/cin (full_adder_24)       0.00       2.01 r
+  adder_inst/rca0/fa3/U1/Y (XOR2X1_RVT)         0.14       2.15 f
+  adder_inst/rca0/fa3/U3/Y (AO22X1_RVT)         0.08       2.23 f
+  adder_inst/rca0/fa3/cout (full_adder_24)      0.00       2.23 f
+  adder_inst/rca0/cout (adder_rca4_6)           0.00       2.23 f
+  adder_inst/U4/Y (INVX1_RVT)                   0.04       2.27 r
+  adder_inst/U20/Y (AO22X1_RVT)                 0.09       2.36 r
+  adder_inst/U5/Y (INVX1_RVT)                   0.04       2.40 f
+  adder_inst/U19/Y (AO22X1_RVT)                 0.08       2.48 f
+  adder_inst/U3/Y (INVX1_RVT)                   0.04       2.53 r
+  adder_inst/U14/Y (AO22X1_RVT)                 0.07       2.60 r
+  adder_inst/sum[13] (adder_csa16)              0.00       2.60 r
+  U97/Y (AO222X1_RVT)                           0.09       2.68 r
+  Y_reg[13]/D (DFFARX1_RVT)                     0.00       2.68 r
+  data arrival time                                        2.68
+
+  clock ideal_clock1 (rise edge)                5.00       5.00
+  clock network delay (ideal)                   0.00       5.00
+  Y_reg[13]/CLK (DFFARX1_RVT)                   0.00       5.00 r
+  library setup time                           -0.07       4.93
+  data required time                                       4.93
+  ----------------------------------------------------------------
+  data required time                                       4.93
+  data arrival time                                       -2.68
+  ----------------------------------------------------------------
+  slack (MET)                                              2.25
+
+
+  Startpoint: opcode[2] (input port clocked by ideal_clock1)
+  Endpoint: carry_out_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_csa            8000                  saed32rvt_ss0p95v125c
+  full_adder_27      ForQA                 saed32rvt_ss0p95v125c
+  adder_rca4_6       ForQA                 saed32rvt_ss0p95v125c
+  full_adder_26      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_25      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_24      ForQA                 saed32rvt_ss0p95v125c
+  adder_csa16        8000                  saed32rvt_ss0p95v125c
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                0.00       0.00
+  clock network delay (ideal)                   0.00       0.00
+  input external delay                          1.00       1.00 f
+  opcode[2] (in)                                0.00       1.00 f
+  U143/Y (INVX1_RVT)                            0.02       1.02 r
+  U111/Y (NAND3X0_RVT)                          0.11       1.13 f
+  U119/Y (INVX2_RVT)                            0.12       1.24 r
+  U118/Y (XNOR2X1_RVT)                          0.15       1.39 r
+  adder_inst/b[0] (adder_csa16)                 0.00       1.39 r
+  adder_inst/rca0/b[0] (adder_rca4_6)           0.00       1.39 r
+  adder_inst/rca0/fa0/b (full_adder_27)         0.00       1.39 r
+  adder_inst/rca0/fa0/U1/Y (XOR2X1_RVT)         0.13       1.52 f
+  adder_inst/rca0/fa0/U3/Y (AO22X1_RVT)         0.07       1.60 f
+  adder_inst/rca0/fa0/cout (full_adder_27)      0.00       1.60 f
+  adder_inst/rca0/fa1/cin (full_adder_26)       0.00       1.60 f
+  adder_inst/rca0/fa1/U1/Y (XOR2X1_RVT)         0.13       1.73 r
+  adder_inst/rca0/fa1/U3/Y (AO22X1_RVT)         0.08       1.81 r
+  adder_inst/rca0/fa1/cout (full_adder_26)      0.00       1.81 r
+  adder_inst/rca0/fa2/cin (full_adder_25)       0.00       1.81 r
+  adder_inst/rca0/fa2/U1/Y (XOR2X1_RVT)         0.14       1.95 f
+  adder_inst/rca0/fa2/U3/Y (AO22X1_RVT)         0.07       2.02 f
+  adder_inst/rca0/fa2/cout (full_adder_25)      0.00       2.02 f
+  adder_inst/rca0/fa3/cin (full_adder_24)       0.00       2.02 f
+  adder_inst/rca0/fa3/U1/Y (XOR2X1_RVT)         0.13       2.16 r
+  adder_inst/rca0/fa3/U3/Y (AO22X1_RVT)         0.09       2.25 r
+  adder_inst/rca0/fa3/cout (full_adder_24)      0.00       2.25 r
+  adder_inst/rca0/cout (adder_rca4_6)           0.00       2.25 r
+  adder_inst/U4/Y (INVX1_RVT)                   0.04       2.29 f
+  adder_inst/U20/Y (AO22X1_RVT)                 0.08       2.37 f
+  adder_inst/U5/Y (INVX1_RVT)                   0.04       2.41 r
+  adder_inst/U19/Y (AO22X1_RVT)                 0.09       2.50 r
+  adder_inst/U3/Y (INVX1_RVT)                   0.04       2.54 f
+  adder_inst/U18/Y (AO22X1_RVT)                 0.06       2.60 f
+  adder_inst/cout (adder_csa16)                 0.00       2.60 f
+  U63/Y (AND2X1_RVT)                            0.05       2.65 f
+  carry_out_reg/D (DFFARX1_RVT)                 0.00       2.65 f
+  data arrival time                                        2.65
+
+  clock ideal_clock1 (rise edge)                5.00       5.00
+  clock network delay (ideal)                   0.00       5.00
+  carry_out_reg/CLK (DFFARX1_RVT)               0.00       5.00 r
+  library setup time                           -0.05       4.95
+  data required time                                       4.95
+  ----------------------------------------------------------------
+  data required time                                       4.95
+  data arrival time                                       -2.65
+  ----------------------------------------------------------------
+  slack (MET)                                              2.30
+
+
+  Startpoint: opcode[2] (input port clocked by ideal_clock1)
+  Endpoint: Y_reg[9] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_csa            8000                  saed32rvt_ss0p95v125c
+  full_adder_27      ForQA                 saed32rvt_ss0p95v125c
+  adder_rca4_6       ForQA                 saed32rvt_ss0p95v125c
+  full_adder_26      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_25      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_24      ForQA                 saed32rvt_ss0p95v125c
+  adder_csa16        8000                  saed32rvt_ss0p95v125c
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                0.00       0.00
+  clock network delay (ideal)                   0.00       0.00
+  input external delay                          1.00       1.00 f
+  opcode[2] (in)                                0.00       1.00 f
+  U143/Y (INVX1_RVT)                            0.02       1.02 r
+  U111/Y (NAND3X0_RVT)                          0.11       1.13 f
+  U119/Y (INVX2_RVT)                            0.12       1.24 r
+  U118/Y (XNOR2X1_RVT)                          0.15       1.39 r
+  adder_inst/b[0] (adder_csa16)                 0.00       1.39 r
+  adder_inst/rca0/b[0] (adder_rca4_6)           0.00       1.39 r
+  adder_inst/rca0/fa0/b (full_adder_27)         0.00       1.39 r
+  adder_inst/rca0/fa0/U1/Y (XOR2X1_RVT)         0.13       1.52 f
+  adder_inst/rca0/fa0/U3/Y (AO22X1_RVT)         0.07       1.60 f
+  adder_inst/rca0/fa0/cout (full_adder_27)      0.00       1.60 f
+  adder_inst/rca0/fa1/cin (full_adder_26)       0.00       1.60 f
+  adder_inst/rca0/fa1/U1/Y (XOR2X1_RVT)         0.13       1.73 r
+  adder_inst/rca0/fa1/U3/Y (AO22X1_RVT)         0.08       1.81 r
+  adder_inst/rca0/fa1/cout (full_adder_26)      0.00       1.81 r
+  adder_inst/rca0/fa2/cin (full_adder_25)       0.00       1.81 r
+  adder_inst/rca0/fa2/U1/Y (XOR2X1_RVT)         0.14       1.95 f
+  adder_inst/rca0/fa2/U3/Y (AO22X1_RVT)         0.07       2.02 f
+  adder_inst/rca0/fa2/cout (full_adder_25)      0.00       2.02 f
+  adder_inst/rca0/fa3/cin (full_adder_24)       0.00       2.02 f
+  adder_inst/rca0/fa3/U1/Y (XOR2X1_RVT)         0.13       2.16 r
+  adder_inst/rca0/fa3/U3/Y (AO22X1_RVT)         0.09       2.25 r
+  adder_inst/rca0/fa3/cout (full_adder_24)      0.00       2.25 r
+  adder_inst/rca0/cout (adder_rca4_6)           0.00       2.25 r
+  adder_inst/U4/Y (INVX1_RVT)                   0.04       2.29 f
+  adder_inst/U20/Y (AO22X1_RVT)                 0.08       2.37 f
+  adder_inst/U5/Y (INVX1_RVT)                   0.04       2.41 r
+  adder_inst/U6/Y (AO22X1_RVT)                  0.07       2.48 r
+  adder_inst/sum[9] (adder_csa16)               0.00       2.48 r
+  U64/Y (AO222X1_RVT)                           0.09       2.57 r
+  Y_reg[9]/D (DFFARX1_RVT)                      0.00       2.57 r
+  data arrival time                                        2.57
+
+  clock ideal_clock1 (rise edge)                5.00       5.00
+  clock network delay (ideal)                   0.00       5.00
+  Y_reg[9]/CLK (DFFARX1_RVT)                    0.00       5.00 r
+  library setup time                           -0.07       4.93
+  data required time                                       4.93
+  ----------------------------------------------------------------
+  data required time                                       4.93
+  data arrival time                                       -2.57
+  ----------------------------------------------------------------
+  slack (MET)                                              2.36
+
+
+  Startpoint: opcode[2] (input port clocked by ideal_clock1)
+  Endpoint: Y_reg[8] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_csa            8000                  saed32rvt_ss0p95v125c
+  full_adder_27      ForQA                 saed32rvt_ss0p95v125c
+  adder_rca4_6       ForQA                 saed32rvt_ss0p95v125c
+  full_adder_26      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_25      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_24      ForQA                 saed32rvt_ss0p95v125c
+  adder_csa16        8000                  saed32rvt_ss0p95v125c
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                0.00       0.00
+  clock network delay (ideal)                   0.00       0.00
+  input external delay                          1.00       1.00 f
+  opcode[2] (in)                                0.00       1.00 f
+  U143/Y (INVX1_RVT)                            0.02       1.02 r
+  U111/Y (NAND3X0_RVT)                          0.11       1.13 f
+  U119/Y (INVX2_RVT)                            0.12       1.24 r
+  U118/Y (XNOR2X1_RVT)                          0.15       1.39 r
+  adder_inst/b[0] (adder_csa16)                 0.00       1.39 r
+  adder_inst/rca0/b[0] (adder_rca4_6)           0.00       1.39 r
+  adder_inst/rca0/fa0/b (full_adder_27)         0.00       1.39 r
+  adder_inst/rca0/fa0/U1/Y (XOR2X1_RVT)         0.13       1.52 f
+  adder_inst/rca0/fa0/U3/Y (AO22X1_RVT)         0.07       1.60 f
+  adder_inst/rca0/fa0/cout (full_adder_27)      0.00       1.60 f
+  adder_inst/rca0/fa1/cin (full_adder_26)       0.00       1.60 f
+  adder_inst/rca0/fa1/U1/Y (XOR2X1_RVT)         0.13       1.73 r
+  adder_inst/rca0/fa1/U3/Y (AO22X1_RVT)         0.08       1.81 r
+  adder_inst/rca0/fa1/cout (full_adder_26)      0.00       1.81 r
+  adder_inst/rca0/fa2/cin (full_adder_25)       0.00       1.81 r
+  adder_inst/rca0/fa2/U1/Y (XOR2X1_RVT)         0.14       1.95 f
+  adder_inst/rca0/fa2/U3/Y (AO22X1_RVT)         0.07       2.02 f
+  adder_inst/rca0/fa2/cout (full_adder_25)      0.00       2.02 f
+  adder_inst/rca0/fa3/cin (full_adder_24)       0.00       2.02 f
+  adder_inst/rca0/fa3/U1/Y (XOR2X1_RVT)         0.13       2.16 r
+  adder_inst/rca0/fa3/U3/Y (AO22X1_RVT)         0.09       2.25 r
+  adder_inst/rca0/fa3/cout (full_adder_24)      0.00       2.25 r
+  adder_inst/rca0/cout (adder_rca4_6)           0.00       2.25 r
+  adder_inst/U4/Y (INVX1_RVT)                   0.04       2.29 f
+  adder_inst/U20/Y (AO22X1_RVT)                 0.08       2.37 f
+  adder_inst/U5/Y (INVX1_RVT)                   0.04       2.41 r
+  adder_inst/U7/Y (AO22X1_RVT)                  0.07       2.48 r
+  adder_inst/sum[8] (adder_csa16)               0.00       2.48 r
+  U67/Y (AO222X1_RVT)                           0.09       2.57 r
+  Y_reg[8]/D (DFFARX1_RVT)                      0.00       2.57 r
+  data arrival time                                        2.57
+
+  clock ideal_clock1 (rise edge)                5.00       5.00
+  clock network delay (ideal)                   0.00       5.00
+  Y_reg[8]/CLK (DFFARX1_RVT)                    0.00       5.00 r
+  library setup time                           -0.07       4.93
+  data required time                                       4.93
+  ----------------------------------------------------------------
+  data required time                                       4.93
+  data arrival time                                       -2.57
+  ----------------------------------------------------------------
+  slack (MET)                                              2.36
+
+
+  Startpoint: opcode[2] (input port clocked by ideal_clock1)
+  Endpoint: Y_reg[11] (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_csa            8000                  saed32rvt_ss0p95v125c
+  full_adder_27      ForQA                 saed32rvt_ss0p95v125c
+  adder_rca4_6       ForQA                 saed32rvt_ss0p95v125c
+  full_adder_26      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_25      ForQA                 saed32rvt_ss0p95v125c
+  full_adder_24      ForQA                 saed32rvt_ss0p95v125c
+  adder_csa16        8000                  saed32rvt_ss0p95v125c
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                0.00       0.00
+  clock network delay (ideal)                   0.00       0.00
+  input external delay                          1.00       1.00 f
+  opcode[2] (in)                                0.00       1.00 f
+  U143/Y (INVX1_RVT)                            0.02       1.02 r
+  U111/Y (NAND3X0_RVT)                          0.11       1.13 f
+  U119/Y (INVX2_RVT)                            0.12       1.24 r
+  U118/Y (XNOR2X1_RVT)                          0.15       1.39 r
+  adder_inst/b[0] (adder_csa16)                 0.00       1.39 r
+  adder_inst/rca0/b[0] (adder_rca4_6)           0.00       1.39 r
+  adder_inst/rca0/fa0/b (full_adder_27)         0.00       1.39 r
+  adder_inst/rca0/fa0/U1/Y (XOR2X1_RVT)         0.13       1.52 f
+  adder_inst/rca0/fa0/U3/Y (AO22X1_RVT)         0.07       1.60 f
+  adder_inst/rca0/fa0/cout (full_adder_27)      0.00       1.60 f
+  adder_inst/rca0/fa1/cin (full_adder_26)       0.00       1.60 f
+  adder_inst/rca0/fa1/U1/Y (XOR2X1_RVT)         0.13       1.73 r
+  adder_inst/rca0/fa1/U3/Y (AO22X1_RVT)         0.08       1.81 r
+  adder_inst/rca0/fa1/cout (full_adder_26)      0.00       1.81 r
+  adder_inst/rca0/fa2/cin (full_adder_25)       0.00       1.81 r
+  adder_inst/rca0/fa2/U1/Y (XOR2X1_RVT)         0.14       1.95 f
+  adder_inst/rca0/fa2/U3/Y (AO22X1_RVT)         0.07       2.02 f
+  adder_inst/rca0/fa2/cout (full_adder_25)      0.00       2.02 f
+  adder_inst/rca0/fa3/cin (full_adder_24)       0.00       2.02 f
+  adder_inst/rca0/fa3/U1/Y (XOR2X1_RVT)         0.13       2.16 r
+  adder_inst/rca0/fa3/U3/Y (AO22X1_RVT)         0.09       2.25 r
+  adder_inst/rca0/fa3/cout (full_adder_24)      0.00       2.25 r
+  adder_inst/rca0/cout (adder_rca4_6)           0.00       2.25 r
+  adder_inst/U4/Y (INVX1_RVT)                   0.04       2.29 f
+  adder_inst/U20/Y (AO22X1_RVT)                 0.08       2.37 f
+  adder_inst/U5/Y (INVX1_RVT)                   0.04       2.41 r
+  adder_inst/U16/Y (AO22X1_RVT)                 0.07       2.48 r
+  adder_inst/sum[11] (adder_csa16)              0.00       2.48 r
+  U103/Y (AO222X1_RVT)                          0.09       2.57 r
+  Y_reg[11]/D (DFFARX1_RVT)                     0.00       2.57 r
+  data arrival time                                        2.57
+
+  clock ideal_clock1 (rise edge)                5.00       5.00
+  clock network delay (ideal)                   0.00       5.00
+  Y_reg[11]/CLK (DFFARX1_RVT)                   0.00       5.00 r
+  library setup time                           -0.07       4.93
+  data required time                                       4.93
+  ----------------------------------------------------------------
+  data required time                                       4.93
+  data arrival time                                       -2.57
+  ----------------------------------------------------------------
+  slack (MET)                                              2.36
+
+
+1
