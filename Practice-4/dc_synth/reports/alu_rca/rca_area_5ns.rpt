@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : alu_rca
+Version: T-2022.03-SP5-4
+Date   : Wed Jun 10 17:53:49 2026
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32rvt_ss0p95v125c (File: /home/ece/ASICFULL/ASIC-Flow_labs_v1p4/library_32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db)
+
+Number of ports:                          242
+Number of nets:                           410
+Number of cells:                          208
+Number of combinational cells:            168
+Number of sequential cells:                19
+Number of macros/black boxes:               0
+Number of buf/inv:                         38
+Number of references:                      19
+
+Combinational area:                492.531070
+Buf/Inv area:                       51.337089
+Noncombinational area:             135.204610
+Macro/Black Box area:                0.000000
+Net Interconnect area:             116.511459
+
+Total cell area:                   627.735681
+Total area:                        744.247140
+1
