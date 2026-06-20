@@ -1,0 +1,83 @@
+Loading db file '/home/ece/ASICFULL/ASIC-Flow_labs_v1p4/library_32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db'
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort medium
+Design : alu_rca
+Version: T-2022.03-SP5-4
+Date   : Wed Jun 10 17:53:50 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v125c (File: /home/ece/ASICFULL/ASIC-Flow_labs_v1p4/library_32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+alu_rca                8000              saed32rvt_ss0p95v125c
+adder_rca16            ForQA             saed32rvt_ss0p95v125c
+adder_rca4_3           ForQA             saed32rvt_ss0p95v125c
+full_adder_15          ForQA             saed32rvt_ss0p95v125c
+adder_rca4_0           ForQA             saed32rvt_ss0p95v125c
+adder_rca4_1           ForQA             saed32rvt_ss0p95v125c
+adder_rca4_2           ForQA             saed32rvt_ss0p95v125c
+full_adder_0           ForQA             saed32rvt_ss0p95v125c
+full_adder_1           ForQA             saed32rvt_ss0p95v125c
+full_adder_2           ForQA             saed32rvt_ss0p95v125c
+full_adder_3           ForQA             saed32rvt_ss0p95v125c
+full_adder_4           ForQA             saed32rvt_ss0p95v125c
+full_adder_5           ForQA             saed32rvt_ss0p95v125c
+full_adder_6           ForQA             saed32rvt_ss0p95v125c
+full_adder_7           ForQA             saed32rvt_ss0p95v125c
+full_adder_8           ForQA             saed32rvt_ss0p95v125c
+full_adder_9           ForQA             saed32rvt_ss0p95v125c
+full_adder_10          ForQA             saed32rvt_ss0p95v125c
+full_adder_11          ForQA             saed32rvt_ss0p95v125c
+full_adder_12          ForQA             saed32rvt_ss0p95v125c
+full_adder_13          ForQA             saed32rvt_ss0p95v125c
+full_adder_14          ForQA             saed32rvt_ss0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  30.9221 uW   (89%)
+  Net Switching Power  =   3.7631 uW   (11%)
+                         ---------
+Total Dynamic Power    =  34.6852 uW  (100%)
+
+Cell Leakage Power     =  28.4803 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     20.9016            0.0000            0.0000           20.9016  (  33.09%)  i
+register       -5.7575e-01        8.7917e-04        9.4004e+06            8.8255 (  13.97%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     10.5962            3.7623        1.9080e+07           33.4384  (  52.94%)
+--------------------------------------------------------------------------------------------------
+Total             30.9221 uW         3.7631 uW     2.8480e+07 pW        63.1656 uW
+1
